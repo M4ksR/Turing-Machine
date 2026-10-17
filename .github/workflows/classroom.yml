@@ -1,0 +1,56 @@
+name: GitHub Classroom Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - '.github/workflows/*'
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  Checking-Solution:
+    runs-on: gtest
+    timeout-minutes: 5
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v6
+      - name: Check
+        run: |
+             !(grep -qwRE --include=*.{cc,cpp,h,hpp} '<vector>|<list>|<algorithm>|<stack>|<queue>|<deque>|<set>|<map>|<bits' ./* ) &&  (echo \"Check - OK\" )  || ( echo \"Forbiden STL containers\" && exit 9 )
+      - name: Check code style
+        run: |
+             clang-format --version
+             find "." \( -name '*.cpp' -o -name '*.h*' \) -print0 | xargs -0 clang-format --dry-run --Werror --verbose
+      - name: Code linting
+        uses: amcp-pit/cpp-linter@v1
+        with:
+          extra-args-before: '-xc++'
+          extra-args: '-std=c++20'
+          after-args: '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
+      - name: Build
+        run: |
+             cmake .
+             cmake --build .
+      - name: Autograding
+        uses: amcp-pit/autograding@v1
+      - name: Memory leaks
+        run: |
+             valgrind --tool=memcheck --leak-check=full --undef-value-errors=no --error-exitcode=111 ./tm tests/14-MT.txt 500 1000000
+             valgrind --tool=memcheck --leak-check=full --undef-value-errors=no --error-exitcode=111 ./tm tests/22-MT.txt 10 1000000 tests/input-22.txt
+             valgrind --tool=memcheck --leak-check=full --undef-value-errors=no --error-exitcode=111 ./tm tests/41-MT.txt 100 1000000
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: CPD
+        uses: amcp-pit/cpd-action@v1
+        id: cpd
+        with:
+          repository: ${{ github.repository }}
+          collection: ${{ github.repository_owner  }}
+      - name: Clean
+        run: |
+             rm -rf ./* || true
+             rm -rf ./.??* || true

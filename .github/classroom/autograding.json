@@ -1,0 +1,364 @@
+{
+  "tests": [
+    {
+      "name": "Test 1",
+      "setup": "",
+      "run": "timeout 2 ./tm tests/1-MT.txt 50 1000000 > output && cmp output tests/output1.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 2",
+      "setup": "",
+      "run": "timeout 2 ./tm tests/2-MT.txt 100 1000000 > output && cmp output tests/output2.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 3",
+      "setup": "",
+      "run": "timeout 2 ./tm tests/3-MT.txt 100 1000000 > output  && cmp output tests/output3.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 4",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/4-MT.txt 100 1000000 > output  && cmp output tests/output4.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 5",
+      "setup": "",
+      "run": "timeout 2 ./tm tests/5-MT.txt 300 1000000 > output  && cmp output tests/output5.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 6",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/6-MT.txt 1000 1000000 > output  && cmp output tests/output6.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 7",
+      "setup": "",
+      "run": "timeout 60 ./tm tests/7-MT.txt 50000 100000000 > output  && cmp output tests/output7.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 8",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/8-MT.txt 500 1000000 > output  && cmp output tests/output8.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 9",
+      "setup": "",
+      "run": "timeout 2 ./tm tests/9-MT.txt 1000 1000000 > output  && cmp output tests/output9.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 10",
+      "setup": "",
+      "run": "timeout 2 ./tm tests/10-MT.txt 1000 1000000 > output  && cmp output tests/output10.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 11",
+      "setup": "",
+      "run": "timeout 2 ./tm tests/11-MT.txt 500 1000000 > output  && cmp output tests/output11.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 12",
+      "setup": "",
+      "run": "timeout 2 ./tm tests/12-MT.txt 500 1000000 > output  && cmp output tests/output12.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 13",
+      "setup": "",
+      "run": "timeout 2 ./tm tests/13-MT.txt 500 1000000 > output  && cmp output tests/output13.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 14",
+      "setup": "",
+      "run": "timeout 2 ./tm tests/14-MT.txt 500 1000000 > output  && cmp output tests/output14.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 15",
+      "setup": "",
+       "run": "timeout 2 ./tm tests/15-MT.txt 500 1000000 > output  && cmp output tests/output15.txt",
+     "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 16",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/16-MT.txt 500 1000000 > output  && cmp output tests/output16.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 17",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/17-MT.txt 500 1000000 > output  && cmp output tests/output17.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 22",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/22-MT.txt 10 1000000 tests/input-22.txt > output && cmp output tests/output22.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 23",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/23-MT.txt 10 1000000 tests/input-23.txt > output && cmp output tests/output23.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 24",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/24-MT.txt 10 1000 tests/input-24.txt > output && cmp output tests/output24.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 25",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/25-MT.txt 10 1000 tests/input-25.txt > output && cmp output tests/output25.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 26",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/26-MT.txt 100 1000000 tests/input-26.txt > output && cmp output tests/output26.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 27",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/27-MT.txt 100 1000000 tests/input-27.txt > output && cmp output tests/output27.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 28",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/28-MT.txt 100 1000000 tests/input-28.txt > output && cmp output tests/output28.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 29",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/29-MT.txt 100 1000000 tests/input-29.txt > output && cmp output tests/output29.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 30",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/30-MT.txt 100 1000000 tests/input-30.txt > output && cmp output tests/output30.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 31",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/31-MT.txt 100 1000000 tests/input-31.txt > output && cmp output tests/output31.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 32",
+      "setup": "",
+      "run": "timeout 5 ./tm tests/32-MT.txt 100 1000000 tests/input-32.txt > output && cmp output tests/output32.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 41",
+      "setup": "",
+      "run": "timeout 1 ./tm tests/41-MT.txt 100 1000000  > output && cmp output tests/output41.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 42",
+      "setup": "",
+      "run": "timeout 1 ./tm tests/42-MT.txt 100 1000000  > output && cmp output tests/output42.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 43",
+      "setup": "",
+      "run": "timeout 1 ./tm tests/43-MT.txt 100 1000000  > output && cmp output tests/output43.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 44",
+      "setup": "",
+      "run": "timeout 1 ./tm tests/44-MT.txt 100 1000000  > output && cmp output tests/output44.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 45",
+      "setup": "",
+      "run": "timeout 1 ./tm tests/45-MT.txt 100 1000000  > output && cmp output tests/output45.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 46",
+      "setup": "",
+      "run": "timeout 1 ./tm tests/21-MT.txt 10 1000 tests/input-46.txt > output && cmp output tests/output46.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 47",
+      "setup": "",
+      "run": "timeout 1 ./tm tests/21-MT.txt 1000 1000 tests/input-47.txt > output && cmp output tests/output47.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 48",
+      "setup": "",
+      "run": "timeout 1 ./tm tests/21-MT.txt 1000 1000 tests/input-48.txt > output && cmp output tests/output48.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
